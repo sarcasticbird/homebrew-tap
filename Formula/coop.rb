@@ -6,8 +6,9 @@ class Coop < Formula
   license "Apache-2.0"
 
   depends_on "go" => :build
-  depends_on "container"
+
   depends_on arch: :arm64
+  depends_on "container"
   depends_on macos: :tahoe
 
   def install
