@@ -1,8 +1,8 @@
 class Wrap < Formula
   desc "Supervise coding-agent terminals in tmux with encrypted browser mirroring"
   homepage "https://github.com/sarcasticbird/wrap"
-  url "https://github.com/sarcasticbird/wrap/archive/refs/tags/v0.1.0-beta.4.tar.gz"
-  sha256 "24a07fedaf10c64aec06fd811ea113aeff70c9cf07db45a9f031d678a33596df"
+  url "https://github.com/sarcasticbird/wrap/archive/refs/tags/v0.1.0-beta.5.tar.gz"
+  sha256 "a855508cbeb7384384dc63298548b586f52cb75ba614bbc63582b35b5f80a25a"
   license "Apache-2.0"
 
   depends_on "go" => :build
