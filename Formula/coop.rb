@@ -1,8 +1,8 @@
 class Coop < Formula
   desc "Project-scoped Linux sandboxes for coding agents on Apple silicon"
   homepage "https://github.com/sarcasticbird/coop"
-  url "https://github.com/sarcasticbird/coop/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "8a9e44920972a1b7a4afa870698d158fa1f94d56a4da6ad435bdf6d27a828601"
+  url "https://github.com/sarcasticbird/coop/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "8982fc05ecf0b49c9e65b1dc45b503e4cb07e299498fc7a48f8b96737b4a65cf"
   license "Apache-2.0"
 
   depends_on "go" => :build
