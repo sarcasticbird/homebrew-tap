@@ -1,25 +1,21 @@
 class Wrap < Formula
-  desc "Supervise coding-agent terminals in tmux with encrypted browser mirroring"
+  desc "Share a tmux window as an encrypted browser terminal"
   homepage "https://github.com/sarcasticbird/wrap"
-  url "https://github.com/sarcasticbird/wrap/archive/refs/tags/v0.1.0-beta.5.tar.gz"
-  sha256 "a855508cbeb7384384dc63298548b586f52cb75ba614bbc63582b35b5f80a25a"
+  url "https://github.com/sarcasticbird/wrap/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "a893f91270ca3df2027fbbf486097f8bd0b32042a6f2c1a0490cc19682fc0941"
   license "Apache-2.0"
 
   depends_on "go" => :build
 
+  depends_on "cloudflared"
   depends_on "tmux"
+
+  on_macos do
+    depends_on arch: :arm64
+  end
 
   def install
     system "go", "build", *std_go_args(ldflags: "-X main.version=v#{version}"), "./cmd/wrap"
-  end
-
-  def caveats
-    <<~EOS
-      Encrypted browser mirroring (press `m`) needs cloudflared:
-        brew install cloudflared
-
-      Ordinary local use does not require it.
-    EOS
   end
 
   test do
