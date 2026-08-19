@@ -1,8 +1,8 @@
 class Wrap < Formula
   desc "Share a tmux window as an encrypted browser terminal"
   homepage "https://github.com/sarcasticbird/wrap"
-  url "https://github.com/sarcasticbird/wrap/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "a893f91270ca3df2027fbbf486097f8bd0b32042a6f2c1a0490cc19682fc0941"
+  url "https://github.com/sarcasticbird/wrap/archive/refs/tags/v0.2.5.tar.gz"
+  sha256 "31f9294705c6f567881b78604a184dd3b1c0bc28d135ae632847ace70df9f6de"
   license "Apache-2.0"
 
   depends_on "go" => :build
