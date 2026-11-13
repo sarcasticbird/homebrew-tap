@@ -1,9 +1,11 @@
 class Wrap < Formula
   desc "Share a tmux window as an encrypted browser terminal"
-  homepage "https://github.com/sarcasticbird/wrap"
-  url "https://github.com/sarcasticbird/wrap/archive/refs/tags/v0.2.7.tar.gz"
+  homepage "https://github.com/sarcasticbirds/wrap"
+  url "https://github.com/sarcasticbirds/wrap/archive/refs/tags/v0.2.7.tar.gz"
   sha256 "96f953936d84fedfff3e07fb816e9ebd9e8d6402229ca515f89babc1f6666e87"
   license "Apache-2.0"
+
+  disable! date: "2026-11-13", because: "has no available source release for the retired Go CLI"
 
   depends_on "go" => :build
 
